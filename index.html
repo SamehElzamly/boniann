@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonian</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img src="./public/header.jpg" alt="header of the page">
+    <div class="contact">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="https://api.whatsapp.com/send/?phone=%2B966530955153&text&type=phone_number&app_absent=0">تواصل معنا الان</a>
+    </div>
+    <h1>بنيان دبليو تي شريك نجاح</h1>
+    <img src="./public/بدون خلفية جميع شريك النجاح .png" alt="'logos of customers">
+    <div class="About">
+        <h1>كيف تساعدك <span>بنيان دبليو تي</span>؟</h1>
+        <p>تساعدك بنيان دبليو تي في إدارة حملاتك الإعلانية وتنشيط مبيعاتك عن طريق خدماتها التسويقية</p>
+    </div>
+    <div class="contact">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="https://api.whatsapp.com/send/?phone=%2B966530955153&text&type=phone_number&app_absent=0">تواصل معنا
+            الان</a>
+    </div>
+    <div class="mediaTeam">
+        <h3>فريق الميديا باينج</h3>
+        <h2>الأول في الظهور في الحملات الإعلانية</h2>
+    </div>
+    <div class="slideBar">
+        <div class="images">
+            <ul>
+                <li><img src="./public/res1.jpg" alt="states"></li>
+                <li><img src="./public/res2.jpg" alt="states"></li>
+                <li><img src="./public/res3.jpg" alt="states"></li>
+                <li><img src="./public/res4.jpg" alt="states"></li>
+                <li><img src="./public/res5.jpg" alt="states"></li>
+                <li><img src="./public/res6.jpg" alt="states"></li>
+                <li><img src="./public/res7.jpg" alt="states"></li>
+                <li><img src="./public/res8.jpg" alt="states"></li>
+                <li><img src="./public/res9.jpg" alt="states"></li>
+                <li><img src="./public/res10.jpg" alt="states"></li>
+                <li><img src="./public/res11.jpg" alt="states"></li>
+                <li><img src="./public/res12.jpg" alt="states"></li>
+                <li><img src="./public/res13.jpg" alt="states"></li>
+                <li><img src="./public/res14.jpg" alt="states"></li>
+                <li><img src="./public/res15.jpg" alt="states"></li>
+            </ul>
+        </div>
+        <div class="circles">
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact">
+        <i class="fa-solid fa-envelope"></i>
+        <a href="https://api.whatsapp.com/send/?phone=%2B966530955153&text&type=phone_number&app_absent=0">تواصل معنا
+            الان</a>
+    </div>
+    <h1>شركاء نجاح وكالة بنيان دبليو تي</h1>
+    <img class="partnersImg" src="./public/body.jpg" alt="the parteners" >
+        <div class="contact">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="https://api.whatsapp.com/send/?phone=%2B966530955153&text&type=phone_number&app_absent=0">تواصل معنا
+                الان</a>
+        </div>
+</body>
+<script >
+    let circles=document.querySelectorAll('.slideBar .circles ul li')
+    let i=1
+        setInterval(()=>{
+            circles.forEach(e=>{
+                e.classList.remove('active')
+            })
+            circles[i].classList.add('active')
+            i++
+            if (i>=circles.length)
+                i=0
+        },3000)
+</script>
+</html>
